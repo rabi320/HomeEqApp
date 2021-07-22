@@ -20,7 +20,7 @@ from sklearn.preprocessing import StandardScaler
 #image
 
 from PIL import Image
-image = Image.open('Data/House.png')
+image = Image.open('House.png')
 st.image(image)
 
 
@@ -37,7 +37,7 @@ This app predicts if the applicant will **return the loan or not**!!
 st.write('---')
 
 # Loads the Data For training
-df1 = pd.read_csv("Data/hmeq.csv")
+df1 = pd.read_csv("hmeq.csv")
 X = df1.drop("BAD", axis = 1)
 y = df1["BAD"]
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state = 42)
