@@ -32,7 +32,8 @@ Cats = ['REASON','JOB']
 #title
 st.write("""
 # Home Equity Loan Prediction App
-This app predicts if the applicant will **return the loan or not**!!
+This app predicts if the applicant will return the loan or not.
+please enter the applicant's information to predict loan default 
 """)
 st.write('---')
 
