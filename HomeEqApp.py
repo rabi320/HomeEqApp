@@ -45,7 +45,8 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_
 # Sidebar
 # Header of Specify Input Parameters
 st.sidebar.header('Specify The Clients Parameters')
-@st.cache
+
+
 def user_input_features():
     LOAN = st.sidebar.slider('Loan Amount', 1100, 89800)
     MORTDUE = st.sidebar.slider('Amount due on existing mortgage', 73807, 399550)
